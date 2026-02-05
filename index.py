@@ -5,7 +5,7 @@ from openai import OpenAI
 from docxtpl import DocxTemplate
 
 # --- CONFIGURATION ---
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "toto"
 TEMPLATE_PATH = "doom.docx"
 OUTPUT_PATH = "Final_Generated_Resume.docx"
 PDF_PATH = "candidate_resume.pdf"
