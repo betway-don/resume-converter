@@ -1,11 +1,14 @@
 import pdfplumber
 import json
 import os
+from dotenv import load_dotenv
 from openai import OpenAI
 from docxtpl import DocxTemplate
 
+load_dotenv()
+
 # --- CONFIGURATION ---
-OPENAI_API_KEY = "toto"
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 TEMPLATE_PATH = "doom.docx"
 OUTPUT_PATH = "Final_Generated_Resume.docx"
 PDF_PATH = "candidate_resume.pdf"
